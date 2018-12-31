@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+
+<body class="animsition">
+
+
+
+    <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-02.jpg);">
+        <h2 class="tit6 t-center">
+            Réservation
+        </h2>
+    </section>
+
+
+
+    <section class="section-mainmenu p-t-110 p-b-70 bg1-pattern">
+        <div class="container">
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <form id="form1" name="form1" method="post" action="">
+                    <span class="tit2 t-center">
+                        Commandez votre table
+                    </span>
+                    <p class="ol">Table pour combien de personnes ?</p>
+                    <select name="ch" id="ch">
+                        <option value="-1">--Veuillez choisir---</option>
+                        <option value="1">Une place</option>
+                        <option value="2">Deux places</option>
+                        <option value="4">4 places</option>
+                        <option value="6">6 places</option>
+                    </select>
+                    <br />
+                    <div id="chaises">
+                    </div>
+
+                    <br />
+                    <br />
+                    <p class="ol"> A quelle date vous allez venir ?</p>
+                    <input name="date" class="form-control is-valid" width="80%" type="text" id="date" value="" />
+                    <br />
+
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <span class="tit2 t-center">
+                    Vos coordonées
+                </span>
+                <p class="ol"> Civilit&eacute; : </p><br>
+                <input name="civilite" type="radio" value="mme" />
+                Madamme
+                <input name="civilite" type="radio" value="mlle" />
+                Mademoiselle
+                <input name="civilite" type="radio" value="m" />
+                Monsieur
+                <br />
+                <p class="ol">Nom et pr&eacute;nom :</p>
+                <input name="nom" class="form-control is-valid" type="text" id="nom" size="20" />
+
+                <br />
+                <p class="ol">N&deg; de t&eacute;l&eacute;phone :</p>
+                <div class="form-group">
+                    <input name="tel" class="form-control is-valid" type="text" id="tel" />
+                </div>
+
+                <br />
+
+
+                <div class="ol" id="div_accompagnateurs">Liste des accompagnateurs
+                    (une personne par ligne):
+                    <br />
+                    <textarea name="accompagnateurs" class="form-control is-valid" cols="46" rows="3" id="accompagnateurs"></textarea>
+                    <br />
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+    <section class="section-lunch bgwhite">
+        <div class="header-lunch parallax0 parallax100" style="background-image: url(images/header-menu-01.jpg);">
+            <div class="bg1-overlay t-center p-t-170 p-b-165">
+                <span class="titre t-center">
+                    <h> Que voulez-vous manger ?</h>
+                </span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row p-t-108 p-b-70">
+                <div class="col-md-8 col-lg-6 m-l-r-auto ">
+
+                    <div class="blo3 flex-w flex-col-l-sm m-b-30 ">
+
+                        <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 ">
+
+
+
+                            <img src="images/salade.jpg" alt="IMG-MENU">
+
+
+                        </div>
+
+                        <div class="text-blo3 size21 flex-col-l-m">
+
+                            <a class="txt21 m-b-3">
+                                salade
+                            </a>
+
+                            <span class="txt22 m-t-20">
+                                5DT
+                            </span>
+                            <div class="form-check d-flex floating ">
+                                <input class="switch mb-1" id="exampleCheck2" name="cmd" type="checkbox" value="Salade"
+                                    data-prix="5" />
+                                <label class="form-check-label switch-label" for="exampleCheck2"></label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="blo3 flex-w flex-col-l-sm m-b-30">
+                        <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
+                            <img src="images/soupe2.jpg" alt="IMG-MENU"></a>
+                        </div>
+
+                        <div class="text-blo3 size21 flex-col-l-m">
+                            <a href="#" class="txt21 m-b-3">
+                                Soupe
+                            </a>
+                            <span class="txt22 m-t-20">
+                                2.5DT
+                            </span>
+                            <div class="form-check d-flex floating ">
+                                <input class="switch mb-1" id="exampleCheck2" name="cmd" type="checkbox" value="Soupe"
+                                    data-prix="2.5" />
+                                <label class="form-check-label switch-label" for="exampleCheck2"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blo3 flex-w flex-col-l-sm m-b-30">
+                        <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
+                            <img src="images/Couscous.jpg" alt="IMG-MENU"></a>
+                        </div>
+
+                        <div class="text-blo3 size21 flex-col-l-m">
+                            <a href="#" class="txt21 m-b-3">
+                                Couscous
+                            </a>
+                            <span class="txt22 m-t-20">
+                                15.5DT
+                            </span>
+                            <div class="form-check d-flex floating ">
+                                <input class="switch mb-1" id="exampleCheck2" name="cmd" type="checkbox" value="Couscous"
+                                    data-prix="15.5" />
+                                <label class="form-check-label switch-label" for="exampleCheck2"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <input name="b1" type="button" id="b1" value="Valider ma commande" class="btn btn-primary" />
+                    <br>
+
+                </div>
+
+                <div class="col-md-8 col-lg-6 m-l-r-auto">
+                    <div class="blo3 flex-w flex-col-l-sm m-b-30">
+                        <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
+                            <img src="images/riz3.jpg" alt="IMG-MENU"></a>
+                        </div>
+
+                        <div class="text-blo3 size21 flex-col-l-m">
+                            <a href="#" class="txt21 m-b-3">
+                                Riz
+                            </a>
+
+                            <span class="txt22 m-t-20">
+                                14DT
+                            </span>
+                            <div class="form-check d-flex floating ">
+                                <input class="switch mb-1" id="exampleCheck2" name="cmd" type="checkbox" value="Riz"
+                                    data-prix="12" />
+                                <label class="form-check-label switch-label" for="exampleCheck2"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blo3 flex-w flex-col-l-sm m-b-30">
+                        <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
+                            <img src="images/gateau.jpg" alt="IMG-MENU"></a>
+                        </div>
+
+                        <div class="text-blo3 size21 flex-col-l-m">
+                            <a href="#" class="txt21 m-b-3">
+                                Gateaux
+                            </a>
+                            <span class="txt22 m-t-20">
+                                6.4DT
+                            </span>
+                            <div class="form-check d-flex floating ">
+                                <input class="switch mb-1" id="exampleCheck2" name="cmd" type="checkbox" value="Gateaux"
+                                    data-prix="6.4" />
+                                <label class="form-check-label switch-label" for="exampleCheck2"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blo3 flex-w flex-col-l-sm m-b-30">
+                        <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
+                            <img src="images/fruit2.jpg " alt="IMG-MENU"></a>
+                        </div>
+
+                        <div class="text-blo3 size21 flex-col-l-m">
+                            <a href="#" class="txt21 m-b-3">
+                                Fruits
+                            </a>
+                            <span class="txt22 m-t-20">
+                                7DT
+                            </span>
+                            <div class="form-check d-flex floating ">
+                                <input class="switch mb-1" id="exampleCheck2" name="cmd" type="checkbox" value="Fruits"
+                                    data-prix="7" />
+                                <label class="form-check-label switch-label" for="exampleCheck2"></label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div id="ticket">
+                        Afficher le r&eacute;sum&eacute; ici ...
+                    </div>
+                    <p>&nbsp;</p>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+
+    <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+
+    <script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick-custom.js"></script>
+
+    <script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+    <script type="text/javascript">
+        $('.parallax100').parallax100();
+    </script>
+    <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+
+    <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/reserve.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/datePicker.js"></script>
+    <link rel="stylesheet" href="css/datePicker.css" type="text/css">
+
+</html>
